@@ -1,21 +1,18 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import SocialLinks from './SocialLinks';
 
 const Footer = () => {
   const styles = {
     link: 'flex items-center gap-2 hover:underline',
   };
   return (
-    <footer className='bg-gray-100 flex justify-center w-full'>
-      <div className='max-w-7xl w-full flex flex-col gap-4 py-8'>
-        <div className='flex gap-8 items-center'>
-          <a href='#' className={styles.link}>
-            <FaGithub aria-label='github-icon' size={'1.5em'} /> GitHub
-          </a>
-          <a href='#' className={styles.link}>
-            <FaLinkedin aria-label='linkedin-icon' size={'1.5em'} /> LinkedIn
-          </a>
-        </div>
-        <p className='text-gray-600 text-sm'>
+    <footer className='bg-gray-100 flex w-full justify-center'>
+      <div className='w-full flex flex-col justify-center items-center lg:items-start gap-4 py-8 sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl'>
+        <SocialLinks
+          style={styles.link}
+          flexAndGap={'flex gap-8 justify-center lg:justify-start items-center'}
+        />
+
+        <p className='text-gray-600 text-sm text-center'>
           &#169; 2023 Berkan Sözer. Inspiration from{' '}
           <a
             href='https://mmistakes.github.io/minimal-mistakes/about/'

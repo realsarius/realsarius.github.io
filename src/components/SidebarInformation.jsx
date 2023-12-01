@@ -1,35 +1,38 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IoLocationSharp } from 'react-icons/io5';
+import SocialLinks from './SocialLinks';
 
 const SidebarInformation = () => {
   const styles = {
-    container:
-      'flex flex-col gap-4 col-span-1 opacity-80 hover:opacity-100 transition-opacity duration-200 ease-linear',
-    link: 'flex items-center gap-2 hover:underline',
+    container: '',
+    link: '',
   };
 
   return (
-    <div className={styles.container}>
+    <div
+      className={`flex row-span-1 lg:flex-col gap-4 col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-1 opacity-80 hover:opacity-100 transition-opacity duration-200 ease-linear`}
+    >
       <img
         src='https://avatars.githubusercontent.com/u/54468228?v=4'
         alt='my-picture'
-        className='w-32 rounded-full'
+        className='lg:w-32 lg:h-32 w-16 h-16 rounded-full'
       />
-      <h1 className='font-bold text-2xl'>Berkan Sözer</h1>
-      <div href='#' className='flex items-center gap-2'>
+      <div>
+        <h1 className='font-bold text-md lg:text-2xl'>Berkan Sözer</h1>
+        <p className='text-sm lg:text-md'>
+          I&apos;m on my way to become a full-stack web developer. I value hard
+          work, problem solving and clean code principles.
+        </p>
+      </div>
+
+      <div href='#' className='lg:flex items-center gap-2 hidden'>
         <IoLocationSharp aria-label='location-icon' size={'1.5em'} /> Manisa,
         Turkey
       </div>
-      <p className='text-base'>
-        I&apos;m on my way to become a full-stack web developer. I value hard
-        work, problem solving and clean code principles.
-      </p>
-      <a href='#' className={styles.link}>
-        <FaGithub aria-label='github-icon' size={'1.5em'} /> GitHub
-      </a>
-      <a href='#' className={styles.link}>
-        <FaLinkedin aria-label='linkedin-icon' size={'1.5em'} /> LinkedIn
-      </a>
+
+      <SocialLinks
+        style={'lg:flex hidden items-center gap-2 hover:underline'}
+        flexAndGap={'lg:flex flex-col hidden gap-4'}
+      />
     </div>
   );
 };
