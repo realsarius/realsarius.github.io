@@ -18,7 +18,7 @@ const Homepage = () => {
             {/* <div className='bg-homepage--blog-project h-80 w-full bg-no-repeat bg-origin-content bg-contain bg-center'></div> */}
 
             <img
-              src='src\assets\img\blog-project.png'
+              src='https://github.com/realsarius/blog-project/blob/main/frontend/src/assets/img/blog-project.png?raw=true'
               alt='blog-project-showcase-img'
               className=''
             />
