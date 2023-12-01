@@ -1,5 +1,21 @@
+import React from 'react';
+import SidebarInformation from '../components/SidebarInformation';
+
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <React.Fragment>
+      <SidebarInformation />
+      <div className='col-span-4 flex flex-col gap-4 text-xl'>
+        <h1 className='text-2xl font-bold'>Contact</h1>
+        <p>
+          You can contact me at:{' '}
+          <a href='mailto:berkansozer@protonmail.com'>
+            berkansozer@protonmail.com
+          </a>
+        </p>
+      </div>
+    </React.Fragment>
+  );
 };
 
 export default Contact;

@@ -1,8 +1,8 @@
 {
   "homepage": "http://realsarius.github.io/",
-  "name": "vite-project",
+  "name": "portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
@@ -15,6 +15,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
     "react-router-dom": "^6.20.0"
   },
   "devDependencies": {
