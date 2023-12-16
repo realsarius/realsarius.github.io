@@ -8,7 +8,7 @@ import MyProjects from './pages/MyProjects';
 
 function App() {
   return (
-    <div className='w-full flex flex-col gap-8 h-screen'>
+    <div className='w-full flex flex-col gap-8 h-screen px-2'>
       <Navigation />
       <div className='flex flex-grow justify-center'>
         <div className='flex flex-col gap-8 lg:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 sm:max-w-xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl max-w-full w-full'>
